@@ -1,49 +1,128 @@
----
-meta-viewport: width=device-width, initial-scale=1.0
-title: Memento Vitae — Assistenza
----
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memento Vitae — Assistenza</title>
+<style>
+  :root {
+    --bg: #000000;
+    --fg: #f4f4f4;
+    --gray: #8a8a8a;
+    --dim: #4a4a4a;
+    --red: #ff2d2d;
+    --line: #242424;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, Consolas, monospace;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 56px 24px 120px;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+    font-weight: 700;
+  }
+  .meta {
+    color: var(--dim);
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-top: 48px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 12px;
+  }
+  h3 {
+    font-size: 17px;
+    color: var(--fg);
+    margin-top: 32px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  p { color: #d6d6d6; margin: 0 0 14px; }
+  a { color: var(--red); text-decoration: underline; text-decoration-color: #5a1414; }
+  a:hover { text-decoration-color: var(--red); }
+  strong { color: var(--fg); }
+  .contact-box {
+    border: 1px solid var(--line);
+    padding: 20px 24px;
+    margin: 20px 0 8px;
+  }
+  .contact-box a {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .response-time {
+    color: var(--dim);
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  ul { padding-left: 20px; color: #d6d6d6; }
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    color: var(--dim);
+    font-size: 13px;
+  }
+  footer a { color: var(--gray); }
+</style>
+</head>
+<body>
 
-# Assistenza — Memento Vitae
+  <h1>ASSISTENZA — MEMENTO VITAE</h1>
+  <div class="meta">Ultimo aggiornamento: 26/08/2026 · Versione app: 1.0.0</div>
 
-Ultimo aggiornamento: 26/08/2026 · Versione app: 1.0.0
+  <h2>Contatto</h2>
+  <p>Per qualsiasi problema, domanda o segnalazione su Memento Vitae:</p>
+  <div class="contact-box">
+    <a href="mailto:aloium.tech@gmail.com">aloium.tech@gmail.com</a>
+    <div class="response-time">Rispondiamo di norma entro 2-3 giorni lavorativi.</div>
+  </div>
 
-## Contatto
+  <h2>Domande frequenti</h2>
 
-Per qualsiasi problema, domanda o segnalazione su Memento Vitae, scrivi a:
+  <h3>Come gestisco o annullo l'abbonamento Accesso Esteso?</h3>
+  <p>Da Impostazioni iOS → [il tuo nome] → Abbonamenti → Memento Vitae. La gestione dell'abbonamento avviene interamente tramite Apple, non attraverso di noi.</p>
 
-**aloium.tech@gmail.com**
+  <h3>L'app non legge i miei dati da Salute/HealthKit. Cosa faccio?</h3>
+  <p>Verifica i permessi in Impostazioni iOS → Salute → Accesso app e dispositivi → Memento Vitae, e assicurati che i tipi di dato richiesti (passi, sonno, frequenza cardiaca a riposo, HRV) siano autorizzati. Se hai appena installato l'app, potrebbe volerci qualche minuto prima che HealthKit sincronizzi i primi dati.</p>
 
-Rispondiamo di norma entro 2-3 giorni lavorativi.
+  <h3>Come disattivo le notifiche più dirette?</h3>
+  <p>Nelle Impostazioni dell'app, attiva la <strong>Modalità Osservatore</strong>: disattiva i malus e neutralizza il tono delle notifiche, senza disinstallare l'app. Puoi anche disattivare le notifiche del tutto da Impostazioni iOS → Notifiche → Memento Vitae.</p>
 
-## Domande frequenti
+  <h3>I miei dati sanitari sono al sicuro?</h3>
+  <p>Sì: i dati HealthKit e gli esami del sangue letti tramite OCR vengono elaborati esclusivamente sul tuo dispositivo e non vengono mai trasmessi ai nostri server. Dettagli completi nella nostra <a href="https://aloiumtech-ui.github.io/memento/privacy-policy.html">Informativa sulla Privacy</a>.</p>
 
-### Come gestisco o annullo l'abbonamento Accesso Esteso?
+  <h3>Come cancello i miei dati?</h3>
+  <p>Memento Vitae non richiede un account: disinstallando l'app, tutti i dati salvati localmente (dati sanitari, esami, preferenze) vengono rimossi. Per la cancellazione dei dati di abbonamento, contattaci all'indirizzo sopra o gestiscili da Impostazioni iOS → Abbonamenti.</p>
 
-Da Impostazioni iOS → [il tuo nome] → Abbonamenti → Memento Vitae. La gestione dell'abbonamento avviene interamente tramite Apple, non attraverso di noi.
+  <h3>Ho trovato un bug o l'app si blocca</h3>
+  <p>Scrivici indicando: modello di iPhone, versione iOS, e cosa stavi facendo quando è successo. Se possibile, allega uno screenshot.</p>
 
-### L'app non legge i miei dati da Salute/HealthKit. Cosa faccio?
+  <h2>Altri link</h2>
+  <ul>
+    <li><a href="https://aloiumtech-ui.github.io/memento/privacy-policy.html">Informativa sulla Privacy</a></li>
+    <li><a href="https://aloiumtech-ui.github.io/memento/terms-of-service.html">Termini di Servizio</a></li>
+  </ul>
 
-Verifica i permessi in Impostazioni iOS → Salute → Accesso app e dispositivi → Memento Vitae, e assicurati che i tipi di dato richiesti (passi, sonno, frequenza cardiaca a riposo, HRV) siano autorizzati. Se hai appena installato l'app, potrebbe volerci qualche minuto prima che HealthKit sincronizzi i primi dati.
+  <footer>
+    © 2026 Aloium. Memento Vitae è un marchio di Aloium.
+  </footer>
 
-### Come disattivo le notifiche più dirette?
-
-Nelle Impostazioni dell'app, attiva la **Modalità Osservatore**: disattiva i malus e neutralizza il tono delle notifiche, senza disinstallare l'app. Puoi anche disattivare le notifiche del tutto da Impostazioni iOS → Notifiche → Memento Vitae.
-
-### I miei dati sanitari sono al sicuro?
-
-Sì: i dati HealthKit e gli esami del sangue letti tramite OCR vengono elaborati esclusivamente sul tuo dispositivo e non vengono mai trasmessi ai nostri server. Dettagli completi nella nostra [Informativa sulla Privacy](https://aloiumtech-ui.github.io/memento/privacy-policy.html).
-
-### Come cancello i miei dati?
-
-Memento Vitae non richiede un account: disinstallando l'app, tutti i dati salvati localmente (dati sanitari, esami, preferenze) vengono rimossi. Per la cancellazione dei dati di abbonamento, contattaci all'indirizzo sopra o gestiscili da Impostazioni iOS → Abbonamenti.
-
-### Ho trovato un bug o l'app si blocca
-
-Scrivici a aloium.tech@gmail.com indicando: modello di iPhone, versione iOS, e cosa stavi facendo quando è successo. Se possibile, allega uno screenshot.
-
-## Altri link
-
-- [Informativa sulla Privacy](https://aloiumtech-ui.github.io/memento/privacy-policy.html)
-- [Termini di Servizio](https://aloiumtech-ui.github.io/memento/terms-of-service.html)
-
-© 2026 Aloium. Memento Vitae è un marchio di Aloium.
+</body>
+</html>
