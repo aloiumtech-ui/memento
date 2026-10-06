@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memento Vitae · Termini</title>
+<script>
+  // Lingua: ?lang=it|en, altrimenti quella del browser (italiano solo se è la principale).
+  (function () {
+    var q = new URLSearchParams(location.search).get("lang");
+    var l = q || ((navigator.language || "en").toLowerCase().indexOf("it") === 0 ? "it" : "en");
+    document.documentElement.setAttribute("data-lang", l === "it" ? "it" : "en");
+    document.documentElement.lang = l === "it" ? "it" : "en";
+  })();
+</script>
+<style>
+  :root { --bg:#000; --fg:#f4f4f4; --gray:#8a8a8a; --dim:#5a5a5a; --red:#ff2d2d; --line:#242424; }
+  * { box-sizing: border-box; }
+  body { background:var(--bg); color:var(--fg); font-family:'JetBrains Mono','SF Mono',ui-monospace,Menlo,Consolas,monospace; max-width:760px; margin:0 auto; padding:56px 24px 120px; line-height:1.65; font-size:15px; }
+  [data-lang="it"] [lang="en"], [data-lang="en"] [lang="it"] { display:none; }
+  .switch { text-align:right; font-size:13px; letter-spacing:2px; margin-bottom:24px; }
+  .switch a { color:var(--gray); text-decoration:none; margin-left:12px; }
+  [data-lang="it"] .switch a.it, [data-lang="en"] .switch a.en { color:var(--fg); border-bottom:1px solid var(--red); }
+  h1 { font-size:24px; letter-spacing:1px; margin:0 0 4px; }
+  .meta { color:var(--dim); font-size:13px; margin-bottom:40px; }
+  h2 { font-size:14px; letter-spacing:2px; text-transform:uppercase; color:var(--gray); margin:44px 0 14px; border-bottom:1px solid var(--line); padding-bottom:10px; }
+  h3 { font-size:16px; margin:28px 0 8px; }
+  p, li { color:#d0d0d0; }
+  a { color:var(--red); }
+  strong { color:var(--fg); }
+  .box { border-left:2px solid var(--red); padding:14px 18px; margin:18px 0; background:#0d0505; color:#d6d6d6; }
+  table { width:100%; border-collapse:collapse; margin:14px 0; font-size:13px; }
+  th, td { text-align:left; padding:9px 10px; border-bottom:1px solid var(--line); color:#c8c8c8; vertical-align:top; }
+  th { color:var(--fg); }
+  footer { margin-top:64px; padding-top:22px; border-top:1px solid var(--line); color:var(--dim); font-size:12px; }
+</style>
+</head>
+<body>
+
+<div class="switch"><a class="it" href="?lang=it">IT</a><a class="en" href="?lang=en">EN</a></div>
+
+<div lang="it">
+<h1>Termini di Servizio · Memento Vitae</h1>
+<div class="meta">Ultimo aggiornamento: 06/10/2026 · Versione app: 1.1</div>
+
+<p>Questi Termini regolano l'uso dell'applicazione Memento Vitae ("l'App"), sviluppata da Aloium di Luca Punzo ("noi"). Scaricando o usando l'App li accetti.</p>
+
+<h2>1. Cos'è Memento Vitae</h2>
+<p>Memento Vitae è un'app di motivazione comportamentale e intrattenimento. Calcola una stima statistica del tempo di vita residuo a partire da tavole di mortalità nazionali, dalle risposte al questionario e, se lo autorizzi, dai dati di Apple Salute.</p>
+<div class="box"><strong>Memento Vitae non è un dispositivo medico.</strong> Non formula diagnosi e non sostituisce il parere di un medico. Le stime descrivono medie di popolazione, non predicono la vita di una singola persona: la finestra mostrata contiene il 50% dei casi per chi ha un profilo simile al tuo. Non prendere decisioni sulla tua salute basandoti sull'App.</div>
+
+<h2>2. Età minima</h2>
+<p>Per usare l'App devi avere almeno 16 anni.</p>
+
+<h2>3. I tuoi dati</h2>
+<p>L'App non richiede un account. I dati sanitari restano sul tuo dispositivo: i dettagli sono nell'<a href="privacy-policy.html">Informativa sulla Privacy</a>.</p>
+
+<h2>4. Accesso Esteso (abbonamento)</h2>
+<p>Alcune funzioni sono disponibili con l'abbonamento "Accesso Esteso", mensile o annuale. Il prezzo è quello mostrato nell'App e nella schermata di pagamento di Apple, nella valuta del tuo paese.</p>
+<ul>
+<li><strong>Prova gratuita.</strong> Quando è disponibile, il piano annuale include una prova gratuita (ad esempio di 3 giorni) per chi non ne ha già usufruito con lo stesso ID Apple. Se non disdici almeno 24 ore prima della fine della prova, l'abbonamento annuale si attiva e viene addebitato.</li>
+<li>Il pagamento viene addebitato sul tuo ID Apple alla conferma dell'acquisto, o alla fine della prova gratuita.</li>
+<li>L'abbonamento si rinnova automaticamente allo stesso prezzo, salvo disdetta almeno 24 ore prima della fine del periodo in corso.</li>
+<li>Puoi gestirlo o disdirlo in qualsiasi momento da Impostazioni iOS → [il tuo nome] → Abbonamenti.</li>
+<li>I rimborsi sono gestiti da Apple secondo le sue condizioni, fermi i diritti che la legge del tuo paese ti riconosce come consumatore.</li>
+</ul>
+
+<h2>5. Limitazione di responsabilità</h2>
+<p>Nei limiti consentiti dalla legge:</p>
+<ul>
+<li>le stime sono prodotte da un modello statistico basato su letteratura scientifica pubblica e possono essere molto diverse dalla realtà individuale;</li>
+<li>non siamo responsabili delle decisioni prese in base ai contenuti dell'App;</li>
+<li>l'App è fornita "così com'è", senza garanzie di accuratezza o idoneità a uno scopo particolare.</li>
+</ul>
+<p>Se stai attraversando un momento difficile, rivolgiti a un professionista o ai servizi di emergenza del tuo paese. Nell'App puoi attivare la Modalità Osservatore o disattivare le notifiche in qualsiasi momento.</p>
+
+<h2>6. Uso consentito</h2>
+<p>Non puoi usare l'App per scopi illeciti, manometterla o decompilarla, né usarne i risultati per dare consulenza medica ad altre persone.</p>
+
+<h2>7. Proprietà intellettuale</h2>
+<p>Nome, design, contenuti e codice dell'App appartengono ad Aloium di Luca Punzo. Le card che generi puoi condividerle liberamente.</p>
+
+<h2>8. Modifiche</h2>
+<p>Possiamo modificare l'App e questi Termini. In caso di modifiche sostanziali aggiorneremo la data in alto e, quando possibile, lo segnaleremo nelle note di versione.</p>
+
+<h2>9. Legge applicabile</h2>
+<p>Si applica la legge italiana. Per le controversie è competente il foro di Milano, fatti salvi i diritti inderogabili del consumatore, incluso il foro del luogo in cui risiede.</p>
+
+<h2>10. Contatti</h2>
+<p><a href="mailto:aloium.tech@gmail.com">aloium.tech@gmail.com</a></p>
+
+<footer>© 2026 Aloium di Luca Punzo.</footer>
+</div>
+
+<div lang="en">
+<h1>Terms of Service · Memento Vitae</h1>
+<div class="meta">Last updated: October 6, 2026 · App version: 1.1</div>
+
+<p>These Terms govern your use of the Memento Vitae app ("the App"), developed by Aloium di Luca Punzo ("we"). By downloading or using the App you accept them.</p>
+
+<h2>1. What Memento Vitae is</h2>
+<p>Memento Vitae is a behavioral motivation and entertainment app. It calculates a statistical estimate of your remaining lifetime from national life tables, your questionnaire answers and, if you allow it, your Apple Health data.</p>
+<div class="box"><strong>Memento Vitae is not a medical device.</strong> It does not diagnose anything and does not replace a doctor's advice. Its estimates describe population averages and do not predict any single person's life: the window shown contains 50% of outcomes for people with a profile similar to yours. Do not make health decisions based on the App.</div>
+
+<h2>2. Minimum age</h2>
+<p>You must be at least 16 years old to use the App.</p>
+
+<h2>3. Your data</h2>
+<p>The App does not require an account. Health data stays on your device: see the <a href="privacy-policy.html">Privacy Policy</a> for details.</p>
+
+<h2>4. Extended Access (subscription)</h2>
+<p>Some features are available with the "Extended Access" subscription, monthly or yearly. The price is the one shown in the App and on Apple's payment sheet, in your local currency.</p>
+<ul>
+<li><strong>Free trial.</strong> When available, the yearly plan includes a free trial (for example 3 days) for people who haven't already used one with the same Apple ID. Unless you cancel at least 24 hours before the trial ends, the yearly subscription starts and is charged.</li>
+<li>Payment is charged to your Apple ID when you confirm the purchase, or when the free trial ends.</li>
+<li>The subscription renews automatically at the same price unless cancelled at least 24 hours before the end of the current period.</li>
+<li>You can manage or cancel it at any time in iOS Settings → [your name] → Subscriptions.</li>
+<li>Refunds are handled by Apple under its terms, without prejudice to any rights you have as a consumer under the law of your country.</li>
+</ul>
+
+<h2>5. Limitation of liability</h2>
+<p>To the extent permitted by law:</p>
+<ul>
+<li>estimates come from a statistical model based on public scientific literature and may differ greatly from individual reality;</li>
+<li>we are not responsible for decisions made based on the App's content;</li>
+<li>the App is provided "as is", without warranties of accuracy or fitness for a particular purpose.</li>
+</ul>
+<p>If you are going through a difficult time, please reach out to a professional or your country's emergency services. In the App you can turn on Observer Mode or turn off notifications at any time.</p>
+
+<h2>6. Acceptable use</h2>
+<p>You may not use the App for unlawful purposes, tamper with or decompile it, or use its results to give medical advice to others.</p>
+
+<h2>7. Intellectual property</h2>
+<p>The App's name, design, content and code belong to Aloium di Luca Punzo. You are free to share the cards you generate.</p>
+
+<h2>8. Changes</h2>
+<p>We may change the App and these Terms. For material changes we will update the date above and, where possible, mention it in the release notes.</p>
+
+<h2>9. Governing law</h2>
+<p>Italian law applies. The courts of Milan have jurisdiction, without prejudice to mandatory consumer rights, including the right to sue in the courts where you live.</p>
+
+<h2>10. Contact</h2>
+<p><a href="mailto:aloium.tech@gmail.com">aloium.tech@gmail.com</a></p>
+
+<footer>© 2026 Aloium di Luca Punzo.</footer>
+</div>
+
+</body>
+</html>

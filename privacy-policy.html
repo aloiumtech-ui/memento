@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memento Vitae · Privacy</title>
+<script>
+  // Lingua: ?lang=it|en, altrimenti quella del browser (italiano solo se è la principale).
+  (function () {
+    var q = new URLSearchParams(location.search).get("lang");
+    var l = q || ((navigator.language || "en").toLowerCase().indexOf("it") === 0 ? "it" : "en");
+    document.documentElement.setAttribute("data-lang", l === "it" ? "it" : "en");
+    document.documentElement.lang = l === "it" ? "it" : "en";
+  })();
+</script>
+<style>
+  :root { --bg:#000; --fg:#f4f4f4; --gray:#8a8a8a; --dim:#5a5a5a; --red:#ff2d2d; --line:#242424; }
+  * { box-sizing: border-box; }
+  body { background:var(--bg); color:var(--fg); font-family:'JetBrains Mono','SF Mono',ui-monospace,Menlo,Consolas,monospace; max-width:760px; margin:0 auto; padding:56px 24px 120px; line-height:1.65; font-size:15px; }
+  [data-lang="it"] [lang="en"], [data-lang="en"] [lang="it"] { display:none; }
+  .switch { text-align:right; font-size:13px; letter-spacing:2px; margin-bottom:24px; }
+  .switch a { color:var(--gray); text-decoration:none; margin-left:12px; }
+  [data-lang="it"] .switch a.it, [data-lang="en"] .switch a.en { color:var(--fg); border-bottom:1px solid var(--red); }
+  h1 { font-size:24px; letter-spacing:1px; margin:0 0 4px; }
+  .meta { color:var(--dim); font-size:13px; margin-bottom:40px; }
+  h2 { font-size:14px; letter-spacing:2px; text-transform:uppercase; color:var(--gray); margin:44px 0 14px; border-bottom:1px solid var(--line); padding-bottom:10px; }
+  h3 { font-size:16px; margin:28px 0 8px; }
+  p, li { color:#d0d0d0; }
+  a { color:var(--red); }
+  strong { color:var(--fg); }
+  .box { border-left:2px solid var(--red); padding:14px 18px; margin:18px 0; background:#0d0505; color:#d6d6d6; }
+  table { width:100%; border-collapse:collapse; margin:14px 0; font-size:13px; }
+  th, td { text-align:left; padding:9px 10px; border-bottom:1px solid var(--line); color:#c8c8c8; vertical-align:top; }
+  th { color:var(--fg); }
+  footer { margin-top:64px; padding-top:22px; border-top:1px solid var(--line); color:var(--dim); font-size:12px; }
+</style>
+</head>
+<body>
+
+<div class="switch"><a class="it" href="?lang=it">IT</a><a class="en" href="?lang=en">EN</a></div>
+
+<!-- ============================ ITALIANO ============================ -->
+<div lang="it">
+<h1>Informativa sulla Privacy · Memento Vitae</h1>
+<div class="meta">Ultimo aggiornamento: 06/10/2026 · Versione app: 1.1</div>
+
+<p>Memento Vitae ("l'App") è sviluppata da Aloium di Luca Punzo ("noi", "il Titolare"). Questa informativa spiega quali dati usa l'App, dove vengono elaborati e quali diritti hai, ai sensi del Regolamento (UE) 2016/679 (GDPR) e delle linee guida Apple.</p>
+
+<div class="box">In sintesi: i tuoi dati sanitari restano sul tuo iPhone. Non abbiamo server che li ricevono, non c'è un account, non usiamo pubblicità né strumenti di analisi. L'unico servizio esterno è RevenueCat, che gestisce l'abbonamento e non riceve alcun dato sanitario.</div>
+
+<h2>1. Titolare del trattamento</h2>
+<p>Aloium di Luca Punzo<br>Via Sulmona 23, Milano (MI), Italia<br>P.IVA 14707210960<br>Email: <a href="mailto:aloium.tech@gmail.com">aloium.tech@gmail.com</a></p>
+
+<h2>2. Dati che l'App usa</h2>
+
+<h3>2a. Dati di Apple Salute (HealthKit)</h3>
+<p>Solo se lo autorizzi, l'App legge da Salute: data di nascita, sesso biologico, altezza, peso, passi, sonno, frequenza cardiaca, frequenza cardiaca a riposo, variabilità della frequenza cardiaca (HRV), VO₂ max e pressione arteriosa. Li usa per calcolare la tua stima e per non chiederti a mano dati che Salute conosce già. L'App non scrive nulla in Salute.</p>
+<div class="box">Questi dati vengono letti ed elaborati <strong>esclusivamente sul tuo dispositivo</strong>. Non vengono mai inviati a noi né a terzi, non vengono usati per pubblicità e non vengono venduti.</div>
+<p>Puoi revocare l'accesso in qualsiasi momento da Impostazioni iOS → Salute → Accesso ai dati e dispositivi → Memento.</p>
+
+<h3>2b. Risposte al questionario</h3>
+<p>Le risposte che dai all'inizio (stile di vita, dati clinici facoltativi, storia familiare, aspetti psico-sociali) sono salvate solo sul dispositivo. Le domande sensibili sono facoltative e puoi saltarle.</p>
+
+<h3>2c. Esami del sangue (Lettura esami, funzione dell'Accesso Esteso)</h3>
+<p>Se scegli una foto, un'immagine o un PDF di un referto, il testo viene letto con il riconoscimento ottico di Apple (framework Vision) <strong>sul dispositivo</strong>. Il file e il testo letto non vengono trasmessi né conservati: restano salvati solo i valori numerici che confermi tu (glicemia a digiuno, colesterolo LDL, proteina C-reattiva). L'accesso a fotocamera e Foto avviene solo quando lo chiedi tu.</p>
+
+<h3>2d. Card ed esportazioni</h3>
+<p>Le card e i video che generi vengono creati sul dispositivo. Vengono salvati in Foto o condivisi solo quando lo scegli tu.</p>
+
+<h3>2e. Notifiche e uso dell'App</h3>
+<p>Le notifiche sono locali: vengono programmate e generate sul dispositivo, senza server. Per proteggere il tuo benessere l'App conta, sempre e solo sul dispositivo, quante volte la apri in un giorno, e se le aperture sono molto frequenti ti suggerisce una pausa. Non raccogliamo statistiche di utilizzo.</p>
+
+<h3>2f. Abbonamento</h3>
+<p>Per gestire l'Accesso Esteso usiamo <strong>RevenueCat, Inc.</strong> (Stati Uniti), che verifica gli acquisti con Apple. RevenueCat riceve un identificativo anonimo generato dall'App, lo stato dell'abbonamento e i dati di transazione forniti da Apple. Non riceve nome, email né alcun dato sanitario. Il trasferimento verso gli Stati Uniti avviene con le garanzie previste dagli artt. 44 e seguenti del GDPR, come le clausole contrattuali standard. Il pagamento è gestito interamente da Apple: noi non vediamo i tuoi dati di pagamento.</p>
+
+<h2>3. Riepilogo</h2>
+<table>
+<tr><th>Dato</th><th>Dove viene elaborato</th><th>Esce dal dispositivo?</th></tr>
+<tr><td>Dati di Salute</td><td>Sul dispositivo</td><td>Mai</td></tr>
+<tr><td>Questionario</td><td>Sul dispositivo</td><td>Mai</td></tr>
+<tr><td>Referti e valori degli esami</td><td>Sul dispositivo (Vision)</td><td>Mai</td></tr>
+<tr><td>Card e video</td><td>Sul dispositivo</td><td>Solo se li condividi tu</td></tr>
+<tr><td>Abbonamento</td><td>RevenueCat e Apple</td><td>Sì, solo dati di transazione e un ID anonimo</td></tr>
+</table>
+
+<h2>4. Base giuridica</h2>
+<p>I dati relativi alla salute sono categorie particolari di dati (art. 9 GDPR): l'App li usa solo con il tuo consenso esplicito, che dai autorizzando l'accesso in Salute o rispondendo alle domande facoltative, e che puoi revocare in ogni momento. I dati dell'abbonamento sono trattati per eseguire il contratto che concludi acquistandolo (art. 6.1.b).</p>
+
+<h2>5. Età minima</h2>
+<p>L'App è destinata a persone di almeno 16 anni. Non raccogliamo consapevolmente dati di minori di 16 anni.</p>
+
+<h2>6. Conservazione e cancellazione</h2>
+<p>I dati salvati dall'App restano sul dispositivo finché non la disinstalli: disinstallarla li cancella tutti. I dati in Salute appartengono a Salute e restano lì, sotto il tuo controllo. Per i dati di abbonamento conservati da RevenueCat puoi scriverci e chiederne la cancellazione.</p>
+
+<h2>7. I tuoi diritti</h2>
+<p>Hai diritto di accesso, rettifica, cancellazione, limitazione, portabilità, opposizione e revoca del consenso. Poiché i dati sanitari esistono solo sul tuo dispositivo, li controlli direttamente tu. Per tutto il resto scrivi a <a href="mailto:aloium.tech@gmail.com">aloium.tech@gmail.com</a>. Puoi anche presentare reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">garanteprivacy.it</a>).</p>
+
+<h2>8. Modifiche</h2>
+<p>Se questa informativa cambia in modo sostanziale, aggiorneremo la data in alto e, quando possibile, lo segnaleremo nelle note di versione dell'App.</p>
+
+<footer>© 2026 Aloium di Luca Punzo. Memento Vitae non è un dispositivo medico e non fornisce diagnosi.</footer>
+</div>
+
+<!-- ============================ ENGLISH ============================ -->
+<div lang="en">
+<h1>Privacy Policy · Memento Vitae</h1>
+<div class="meta">Last updated: October 6, 2026 · App version: 1.1</div>
+
+<p>Memento Vitae ("the App") is developed by Aloium di Luca Punzo ("we", "the Controller"). This policy explains what data the App uses, where it is processed and what your rights are, under the EU General Data Protection Regulation (GDPR) and Apple's guidelines.</p>
+
+<div class="box">In short: your health data stays on your iPhone. We have no servers that receive it, there is no account, and we use no advertising or analytics tools. The only external service is RevenueCat, which manages subscriptions and never receives any health data.</div>
+
+<h2>1. Data controller</h2>
+<p>Aloium di Luca Punzo<br>Via Sulmona 23, Milan (MI), Italy<br>VAT IT14707210960<br>Email: <a href="mailto:aloium.tech@gmail.com">aloium.tech@gmail.com</a></p>
+
+<h2>2. Data the App uses</h2>
+
+<h3>2a. Apple Health (HealthKit) data</h3>
+<p>Only if you allow it, the App reads from Health: date of birth, biological sex, height, weight, steps, sleep, heart rate, resting heart rate, heart rate variability (HRV), VO₂ max and blood pressure. It uses them to calculate your estimate and to avoid asking you for data Health already has. The App writes nothing to Health.</p>
+<div class="box">This data is read and processed <strong>only on your device</strong>. It is never sent to us or to third parties, never used for advertising and never sold.</div>
+<p>You can revoke access at any time in iOS Settings → Health → Data Access &amp; Devices → Memento.</p>
+
+<h3>2b. Questionnaire answers</h3>
+<p>The answers you give at the start (lifestyle, optional clinical data, family history, psychosocial factors) are stored only on your device. Sensitive questions are optional and can be skipped.</p>
+
+<h3>2c. Blood tests (Lab results, an Extended Access feature)</h3>
+<p>If you pick a photo, image or PDF of a lab report, its text is read with Apple's text recognition (Vision framework) <strong>on your device</strong>. The file and the recognized text are never transmitted or stored: only the numbers you confirm are kept (fasting glucose, LDL cholesterol, C-reactive protein). Camera and Photos are accessed only when you ask.</p>
+
+<h3>2d. Cards and exports</h3>
+<p>Cards and videos you generate are created on your device. They are saved to Photos or shared only when you choose to.</p>
+
+<h3>2e. Notifications and app usage</h3>
+<p>Notifications are local: they are scheduled and generated on your device, with no server. To protect your wellbeing the App counts, on your device only, how many times you open it each day, and suggests a break if you open it very often. We do not collect usage statistics.</p>
+
+<h3>2f. Subscription</h3>
+<p>To manage Extended Access we use <strong>RevenueCat, Inc.</strong> (United States), which verifies purchases with Apple. RevenueCat receives an anonymous identifier generated by the App, your subscription status and the transaction data provided by Apple. It never receives your name, email or any health data. Transfers to the United States rely on the safeguards of Articles 44 and following of the GDPR, such as standard contractual clauses. Payment is handled entirely by Apple: we never see your payment details.</p>
+
+<h2>3. Summary</h2>
+<table>
+<tr><th>Data</th><th>Where it is processed</th><th>Does it leave your device?</th></tr>
+<tr><td>Health data</td><td>On device</td><td>Never</td></tr>
+<tr><td>Questionnaire</td><td>On device</td><td>Never</td></tr>
+<tr><td>Lab reports and values</td><td>On device (Vision)</td><td>Never</td></tr>
+<tr><td>Cards and videos</td><td>On device</td><td>Only if you share them</td></tr>
+<tr><td>Subscription</td><td>RevenueCat and Apple</td><td>Yes, only transaction data and an anonymous ID</td></tr>
+</table>
+
+<h2>4. Legal basis</h2>
+<p>Health data is a special category of data (GDPR Art. 9): the App uses it only with your explicit consent, given by authorizing Health access or answering the optional questions, and you can withdraw it at any time. Subscription data is processed to perform the contract you enter into when you buy it (Art. 6(1)(b)).</p>
+
+<h2>5. Minimum age</h2>
+<p>The App is intended for people aged 16 and over. We do not knowingly collect data from anyone under 16.</p>
+
+<h2>6. Retention and deletion</h2>
+<p>Data saved by the App stays on your device until you delete the App: deleting it removes all of it. Data in Health belongs to Health and stays there, under your control. For subscription data held by RevenueCat you can write to us and ask for it to be deleted.</p>
+
+<h2>7. Your rights</h2>
+<p>You have the right to access, rectification, erasure, restriction, portability, objection and withdrawal of consent. Since health data exists only on your device, you control it directly. For everything else write to <a href="mailto:aloium.tech@gmail.com">aloium.tech@gmail.com</a>. You can also lodge a complaint with your data protection authority (in Italy, the <a href="https://www.garanteprivacy.it">Garante per la protezione dei dati personali</a>).</p>
+
+<h2>8. Changes</h2>
+<p>If this policy changes materially, we will update the date above and, where possible, mention it in the App's release notes.</p>
+
+<footer>© 2026 Aloium di Luca Punzo. Memento Vitae is not a medical device and does not provide diagnoses.</footer>
+</div>
+
+</body>
+</html>
